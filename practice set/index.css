@@ -1,0 +1,17 @@
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    justify-content: center;
+}
+
+.bag-button{
+    background-color: aqua;
+
+    
+    
+}
+.add-item{
+    background-color: aqua;
+
+}

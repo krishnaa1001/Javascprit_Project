@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra Bag</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <button class="bag-button" type="button" onclick="alert('Item has been added to Bag')" >Add to Bag</button> -->
+      <button
+        class="bag-button"
+        type="button"
+        onclick="countQuantity=countQuantity+=1
+        document.querySelector('#cart-summary').innerHTML=`Your Bag has ${countQuantity} items`;
+    "
+      >
+        Add to Bag
+      </button>
+
+      <button
+        class="wishlist-btn"
+        type="button"
+        onclick="countQuantity=countQuantity-=1
+    document.querySelector('#cart-summary').innerHTML=`Your Bag has ${countQuantity} items`;
+"
+      >
+        MOVE TO WISHLIST
+      </button>
+
+      <button
+        class="add-item"
+        type="button"
+        onclick="countQuantity=countQuantity+=2
+    document.querySelector('#cart-summary').innerHTML=`Your Bag has ${countQuantity} items`;
+"
+      >
+        Add 1+1 Sale Items
+      </button>
+
+      <h1 id="cart-summary"></h1>
+    </main>
+    <script>
+      let countQuantity = 0;
+      document.querySelector(
+        "#cart-summary"
+      ).innerHTML = `Your Bag has ${countQuantity} items`;
+    </script>
+  </body>
+</html>
